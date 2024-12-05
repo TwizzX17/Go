@@ -2,13 +2,11 @@ package main
 
 import (
 	"log"
+	"net/http"
 	dbSetup "stock_data/internal/db"
 	"stock_data/internal/router"
 
 	"github.com/joho/godotenv"
-
-	/* "my-go-api/internal/router" */
-	"net/http"
 )
 
 func main() {
