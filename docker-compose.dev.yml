@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:13
+    container_name: stock_postgres_data
+    environment:
+      POSTGRES_USER: yourusername
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_DB: stock_data
+    ports:
+      - "5433:5432"
+    volumes:
+      - stock_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  stock_postgres_data:
